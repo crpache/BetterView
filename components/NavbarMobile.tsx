@@ -8,9 +8,9 @@ type Props = {
 
 export const NavbarMobile = ({ onClose } : Props) => {
   useEffect(() => {
-    document.body.style.overflow = 'hidden'
+    document.body.style.setProperty('overflow', 'hidden', 'important')
     return () => {
-      document.body.style.overflow = 'auto'
+      document.body.style.setProperty('overflow', 'auto', 'important')
     }
   }, [])
 
