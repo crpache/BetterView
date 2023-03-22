@@ -1,14 +1,5 @@
+import { MainLayout } from '@/components/layouts/MainLayout'
 import Head from 'next/head'
-
-const styles = {
-  backgroundColor: '#000',
-  color: '#eee',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  height: '100vh',
-  fontFamily: 'Arial, sans-serif'
-}
 
 const Home = () => {
   return (
@@ -19,9 +10,14 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main style={styles}>
-        <h1>BetterView</h1>
-      </main>
+      <MainLayout>
+        <div className='flex flex-col items-center justify-center gap-6 w-full h-full'>
+          <h1 className='text-center font-extralight w-full'>
+            Better<span className='font-extrabold'>View</span>
+          </h1>
+          <h2 className='text-center font-extralight w-[80%]'>Innovative Web Development for Modern Businesses</h2>
+        </div>
+      </MainLayout>
     </>
   )
 }

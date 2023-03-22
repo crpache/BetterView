@@ -1,3 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-sans bg-black;
+  }
+  p,h1,h2,span {
+    @apply text-gray-200;
+  }
+  h1 {
+    @apply text-6xl w-full text-center;
+  }
+  h2 {
+    @apply text-xl w-full text-center;
+  }
+  body {
+    @apply h-screen w-screen;
+  }
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -85,15 +107,6 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
 a {
   color: inherit;
