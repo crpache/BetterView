@@ -13,16 +13,16 @@ export const NavbarMobile = ({ onClose } : Props) => {
       </div>
       <nav className="flex-1">
         <ul className="flex flex-col gap-12 items-center justify-center list-none text-3xl h-full">
-          <li className="">
+          <li className="" onClick={onClose}>
             <Link href='/'>Home</Link>
           </li>
-          <li className="">
+          <li className="" onClick={onClose}>
             <Link href='/about'>About</Link>
           </li>
-          <li className="">
+          <li className="" onClick={onClose}>
             <Link href='/services'>Services</Link>
           </li>
-          <li className="">
+          <li className="" onClick={onClose}>
             <Link href='/contact'>Contact</Link>
           </li>
         </ul>
