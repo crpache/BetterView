@@ -7,7 +7,7 @@ type Props = {
 
 export const NavbarMobile = ({ onClose } : Props) => {
   return (
-    <div className="h-screen w-screen fixed flex flex-col justify-center">
+    <div className="h-screen w-screen fixed flex flex-col justify-center overscroll-contain">
       <div className="w-full flex justify-end self-start p-4" role='button' onClick={onClose}>
         <CloseIcon />
       </div>
