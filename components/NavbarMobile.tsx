@@ -8,14 +8,18 @@ type Props = {
 
 export const NavbarMobile = ({ onClose } : Props) => {
   useEffect(() => {
-    document.body.style.setProperty('overflow', 'hidden', 'important')
+    const body = document.getElementsByTagName('body')[0]
+    const html = document.getElementsByTagName('html')[0]
+    body.style.setProperty('overflow', 'hidden', 'important')
+    html.style.setProperty('overflow', 'hidden', 'important')
     return () => {
-      document.body.style.setProperty('overflow', 'auto', 'important')
+      body.style.setProperty('overflow', 'auto', 'important')
+      html.style.setProperty('overflow', 'auto', 'important')
     }
   }, [])
 
   return (
-    <div className="h-screen w-screen fixed flex flex-col justify-center overscroll-contain">
+    <div className="h-[100dvh] w-screen fixed flex flex-col justify-center overscroll-contain">
       <div className="w-full flex justify-end self-start p-4" role='button' onClick={onClose}>
         <CloseIcon />
       </div>
