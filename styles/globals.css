@@ -4,11 +4,9 @@
 
 @layer base {
   * {
-    @apply font-sans bg-black;
+    @apply font-sans bg-black text-gray-200;
   }
-  p,h1,h2,span {
-    @apply text-gray-200;
-  }
+  
   h1 {
     @apply text-6xl w-full text-center;
   }
