@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { useEffect } from "react"
 import { CloseIcon } from "./icons/CloseIcon"
 
 type Props = {
@@ -6,6 +7,13 @@ type Props = {
 }
 
 export const NavbarMobile = ({ onClose } : Props) => {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.body.style.overflow = 'auto'
+    }
+  }, [])
+
   return (
     <div className="h-screen w-screen fixed flex flex-col justify-center overscroll-contain">
       <div className="w-full flex justify-end self-start p-4" role='button' onClick={onClose}>
@@ -28,6 +36,5 @@ export const NavbarMobile = ({ onClose } : Props) => {
         </ul>
       </nav>
     </div>
-    
   )
 }
