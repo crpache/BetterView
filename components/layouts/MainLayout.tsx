@@ -9,7 +9,7 @@ export const MainLayout = ({children} : Props) => {
   return (
     <div className="h-screen w-screen flex flex-col justify-between">
       <Header />
-      <main className="flex p-5 w-full">
+      <main className="flex flex-col w-full">
         {children}
       </main>
       <Footer />
