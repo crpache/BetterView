@@ -1,8 +1,10 @@
 import { Button } from '@/components/Button'
 import { MainLayout } from '@/components/layouts/MainLayout'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 const Home = () => {
+  const { push } = useRouter()
   return (
     <>
       <Head>
@@ -21,7 +23,7 @@ const Home = () => {
             <h3 className='text-left font-extralight w-[70%] md:w-full bg-transparent'>
               Innovative Web Development for Modern Businesses
             </h3>
-            <Button onClick={console.log}>
+            <Button onClick={() => push('/contact')}>
               Start now
             </Button>
           </div>
