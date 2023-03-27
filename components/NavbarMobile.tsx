@@ -7,7 +7,7 @@ type Props = {
 }
 
 export const NavbarMobile = ({ onClose } : Props) => {
-  useEffect(() => {
+  /* useEffect(() => {
     const body = document.getElementsByTagName('body')[0]
     const html = document.getElementsByTagName('html')[0]
     body.style.setProperty('overflow', 'hidden', 'important')
@@ -16,7 +16,7 @@ export const NavbarMobile = ({ onClose } : Props) => {
       body.style.setProperty('overflow', 'auto', 'important')
       html.style.setProperty('overflow', 'auto', 'important')
     }
-  }, [])
+  }, []) */
 
   return (
     <div className="h-[100dvh] w-screen fixed flex flex-col justify-center overscroll-contain">
