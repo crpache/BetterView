@@ -15,7 +15,7 @@ const Home = () => {
       </Head>
       <MainLayout>
         <div className='flex flex-col gap-20'>
-          <div className='flex flex-col items-start justify-center gap-6 md:gap-9 px-12 md:px-24 pt-[65px] md:pt-60px w-full h-[100dvh] topography-bg'>
+          <div className='flex flex-col items-start justify-center gap-6 md:gap-9 px-12 md:px-24 pt-[65px] md:pt-60px w-full h-[100svh] topography-bg'>
             <h1 className='text-left font-extrabold w-full bg-transparent'>
               Code your vision,<br/> 
               shape your future
