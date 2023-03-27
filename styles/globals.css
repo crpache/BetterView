@@ -16,9 +16,9 @@
   h3 {
     @apply text-xl md:text-2xl w-full text-center;
   }
-  body {
+/*   body {
     @apply h-screen w-screen;
-  }
+  } */
 }
 
 .topography-bg {
