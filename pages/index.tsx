@@ -38,6 +38,11 @@ const Home = () => {
               <h2 className='font-extrabold text-left'>Performance</h2>
               <p className='leading-relaxed'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, similique, autem iusto repellat molestiae aut quidem ipsa dolor corrupti ut eum deleniti accusamus provident eaque exercitationem itaque? Culpa, ipsum blanditiis!</p>
             </div>
+
+            <div className='flex flex-col md:flex-row justify-start gap-8'>
+              <h2 className='font-extrabold text-left'>Scalability</h2>
+              <p className='leading-relaxed'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, similique, autem iusto repellat molestiae aut quidem ipsa dolor corrupti ut eum deleniti accusamus provident eaque exercitationem itaque? Culpa, ipsum blanditiis!</p>
+            </div>
           </section>
         </div>
       </MainLayout>
