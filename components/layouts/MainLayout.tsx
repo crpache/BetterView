@@ -8,7 +8,7 @@ type Props = {
 export const MainLayout = ({children} : Props) => {
   return (
     <div className="flex flex-col justify-between">
-      <Header />
+      {/* <Header /> */}
       <main className="flex flex-1 flex-col w-full">
         {children}
       </main>
